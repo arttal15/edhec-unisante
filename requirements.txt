@@ -1,0 +1,8 @@
+#numpy==1.23.4  # Package name with specific version constraint
+#pandas         # Package name without version constraint (latest compatible version will be installed)
+#requests>=2.27.1  # Package name with minimum version constraint
+pandas
+logging
+requests
+pyOpenSSL
+urllib3==1.26.6
