@@ -76,7 +76,7 @@ def main():
           }
 
   #data_json = json.dumps(data, indent = 2) 
-  response = requests.post("http://130.61.235.83:11434/api/generate", json=data, stream=False)
+  response = requests.post("http://GPU_IP_ADDRESS:11434/api/generate", json=data, stream=False)
   json_data = json.loads(response.text)
 #  print(json.dumps(json.loads(json_data["response"]), indent=2))
   print(json_data['response'])
