@@ -49,7 +49,7 @@ def api_call(content):
   data["prompt"] += "Voici le texte à analyser, ce texte est issu d'une extraction de plusieurs PDFs qui ont été anonymisés, les données personnelles ont été remplacés par des tags, il faut uniquement aller chercher les informations demandés par SYSTEM : "+content
   data["prompt"] += '''
                     [/INST]'''
-  response = requests.post("http://130.61.235.83:11434/api/generate", json=data, stream=False)
+  response = requests.post("http://GPU_IP_ADDRESS:11434/api/generate", json=data, stream=False)
   json_data = json.loads(response.text)
   return response
 
